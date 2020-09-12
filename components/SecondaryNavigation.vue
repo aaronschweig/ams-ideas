@@ -78,6 +78,13 @@ export default {
   created() {
     this.currentModule = capitalizeFirstLetter(this.$route.name)
   },
+  watch: {
+    '$route.name': function (newVal) {
+      if (newVal !== 'index') {
+        this.currentModule = capitalizeFirstLetter(newVal)
+      }
+    },
+  },
   methods: {
     setActive(item) {
       this.active = this.active.map((a, idx) => {

@@ -231,6 +231,7 @@
       </keep-alive>
     </transition>
     <div class="w-2/3">
+      <HeaderBar />
       <Nuxt />
     </div>
   </div>
