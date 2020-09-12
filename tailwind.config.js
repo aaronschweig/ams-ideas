@@ -14,7 +14,11 @@ module.exports = {
       },
     },
   },
-  variants: {},
+  variants: {
+    padding: ['responsive', 'hover', 'focus'],
+    borderRadius: ['responsive', 'hover', 'focus'],
+    borderWidth: ['responsive', 'hover', 'focus'],
+  },
   plugins: [],
   purge: {
     // Learn more on https://tailwindcss.com/docs/controlling-file-size/#removing-unused-css
